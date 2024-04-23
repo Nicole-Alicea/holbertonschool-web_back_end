@@ -4,7 +4,7 @@
 import math
 
 
-def floor(n: float):
+def floor_(n: float):
     '''Type-annotated function that takes a float as argument and
     returns the floor of the float'''
 
