@@ -6,4 +6,4 @@ def sum_list(input_list: list[float]) -> float:
     '''Type-annotated function that takes a list of floats as argument
     and returns their sum as a float'''
 
-    return sum(input_list)
+    return float(sum(input_list))
