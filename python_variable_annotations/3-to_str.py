@@ -2,7 +2,7 @@
 '''The following is a type-annotated function'''
 
 
-def to_str(n: float):
+def to_str(n: float) -> str:
     '''Type-annotated function that takes a float (n) as argument
     and returns the string representation of the float'''
 
