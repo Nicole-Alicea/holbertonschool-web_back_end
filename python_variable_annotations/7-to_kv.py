@@ -9,6 +9,4 @@ def to_kv(k: str, v: int | float) -> tuple:
     (v) as arguments and returns a tuple. The first element of the tuple is
     the string and the second element is the square of v.'''
 
-    square_v = math.sqrt(v)
-
-    return (k, float(square_v))
+    return (k, float(math.sqrt(v)))
