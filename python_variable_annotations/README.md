@@ -1,0 +1,1 @@
+This directory is all about variable annotations and creating type-annotated functions.
