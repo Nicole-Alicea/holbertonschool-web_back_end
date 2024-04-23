@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 '''The following is a type-annotated function'''
 
-from typing import List
+from typing import List, Union
 
 
-Vector = List[int, float]
+Vector = List[Union[int, float]]
 
 
 def sum_mixed_list(mxd_lst: Vector) -> float:
