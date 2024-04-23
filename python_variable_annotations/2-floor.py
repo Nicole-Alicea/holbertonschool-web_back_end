@@ -8,4 +8,4 @@ def floor(n: float):
     '''Type-annotated function that takes a float as argument and
     returns the floor of the float'''
 
-    return math.floor(n)
+    return floor(n)
