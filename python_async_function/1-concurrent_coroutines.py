@@ -12,11 +12,11 @@ async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     of all the delays in ascending order without using sort() because of
     concurrency.'''
 
-    delays = [wait_random(max_delay) for _ in range(n)]
+    tasks = [wait_random(max_delay) for _ in range(n)]
     all_delays = []
     
-    for completed in asyncio.as_completed(delays):
-        delay = await completed
+    for completed_task in asyncio.as_completed(tasks):
+        delay = await completed_task
         all_delays.append(delay)
 
     return all_delays
