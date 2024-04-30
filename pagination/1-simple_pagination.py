@@ -38,15 +38,15 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-            '''Will return the appropriate page of the dataset based on
-            pagination parameters'''
+        '''Will return the appropriate page of the dataset based on
+        pagination parameters'''
 
-            self.dataset()
+        self.dataset()
 
-            for x in [page, page_size]:
-                 assert isinstance(x, int) and page > 0
-            assert page_size > 0
+        for x in [page, page_size]:
+             assert isinstance(x, int) and page > 0
+        assert page_size > 0
 
-            range_x = index_range(page, page_size)
+        range_x = index_range(page, page_size)
 
-            return self.__dataset[range_x[0]:range_x[1]]
+        return self.__dataset[range_x[0]:range_x[1]]
