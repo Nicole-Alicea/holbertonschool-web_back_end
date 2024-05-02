@@ -1,4 +1,6 @@
 // This script inserts a document in the collection 'school'
->db.school.insert({
+>db.school.insert(
+{
     name: "Holberton school"
-})
+}
+)
