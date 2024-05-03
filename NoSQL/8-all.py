@@ -9,12 +9,8 @@ def list_all(mongo_collection):
     If there are no documents, it will return an empty list'''
 
     all_documents = []
-    empty_list = []
 
     for document in mongo_collection.find():
         all_documents.append(document)
 
         return all_documents
-    
-    else:
-        return empty_list
