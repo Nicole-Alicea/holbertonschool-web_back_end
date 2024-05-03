@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 '''This function will list all documents in a collection'''
 
+import pymongo
+
 
 def list_all(mongo_collection):
     '''Will return a list of all documents in a collection.
@@ -9,7 +11,7 @@ def list_all(mongo_collection):
     all_documents = []
     empty_list = []
 
-    for document in mongo_collection:
+    for document in mongo_collection.find():
         all_documents.append(document)
 
         return all_documents
