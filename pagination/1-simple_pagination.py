@@ -2,7 +2,6 @@
 '''Simple pagination'''
 
 import csv
-import math
 from typing import List, Tuple
 
 
@@ -41,12 +40,8 @@ class Server:
         '''Will return the appropriate page of the dataset based on
         pagination parameters'''
 
-        self.dataset()
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
-        for x in [page, page_size]:
-             assert isinstance(x, int) and page > 0
-        assert page_size > 0
-
-        range_x = index_range(page, page_size)
-
-        return self.__dataset[range_x[0]:range_x[1]]
+        init, end = index_range(page, page_size)
+        return self.__dataset[init:end]
