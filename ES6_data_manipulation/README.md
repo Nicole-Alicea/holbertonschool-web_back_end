@@ -1,0 +1,1 @@
+This directory is about data manipulation in JavaScript.
