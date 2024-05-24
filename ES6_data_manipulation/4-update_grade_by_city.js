@@ -1,5 +1,5 @@
 export default function updateStudentGradeByCity(studentArr, city, newGrades) {
-  const desiredStudents = studentArr.filter((student) => student,location === city);
+  const desiredStudents = studentArr.filter((student) => student.location === city);
   const toChangeStudent = desiredStudents.map((student) => {
     for (const studInfo of newGrades) {
       if (student.id === studInfo.studentId) {
